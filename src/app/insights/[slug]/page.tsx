@@ -8,8 +8,9 @@ export function generateStaticParams() {
   return insights.map((insight) => ({ slug: insight.slug }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
-  const insight = insights.find((i) => i.slug === params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const insight = insights.find((i) => i.slug === slug);
   if (!insight) return { title: "Not Found" };
   return {
     title: insight.title,
@@ -17,8 +18,9 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   };
 }
 
-export default function InsightPage({ params }: { params: { slug: string } }) {
-  const insight = insights.find((i) => i.slug === params.slug);
+export default async function InsightPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const insight = insights.find((i) => i.slug === slug);
   if (!insight) notFound();
 
   return (
