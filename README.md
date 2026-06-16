@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Neohub Solutions — Corporate Website
 
-## Getting Started
+Premium enterprise technology consulting website built with Next.js 16, Tailwind CSS v4, Framer Motion, and canvas particle animations. Deployed via GitHub Pages at [neohubsolutions.com](https://www.neohubsolutions.com).
 
-First, run the development server:
+## Quick Start
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev        # Development server at http://localhost:3000
+npm run build      # Production static export to ./out/
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Pages
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Route | Description |
+|-------|-------------|
+| `/` | Home — Hero, Metrics, Who We Are, Services, Industries, Tech Ecosystem, Why Choose Us, Success Stories, CTA |
+| `/about/` | Company overview, mission, values, leadership, global delivery model |
+| `/services/` | All 6 service categories with capabilities detail |
+| `/industries/` | 8 industry-specific solution pages |
+| `/insights/` | Filterable blog/insights with search |
+| `/careers/` | Benefits, culture, open positions with department filter |
+| `/contact/` | Contact form (Formspree), office info |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Setup Required
 
-## Learn More
+### 1. Contact Form (Formspree)
+1. Sign up at [formspree.io](https://formspree.io)
+2. Create a form and copy the form ID
+3. Replace `YOUR_FORM_ID` in `src/app/contact/page.tsx` line with:
+   ```
+   https://formspree.io/f/YOUR_ACTUAL_FORM_ID
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+### 2. GitHub Pages Deployment
+1. Create a GitHub repo named `neohub-solutions`
+2. Push code: `git init && git add . && git commit -m "Initial commit" && git remote add origin https://github.com/YOUR_USERNAME/neohub-solutions.git && git push -u origin main`
+3. Go to repo Settings → Pages → Source: **GitHub Actions**
+4. Every push to `main` auto-deploys via `.github/workflows/deploy.yml`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 3. Custom Domain DNS
+Add these DNS records at your domain registrar:
+```
+Type: CNAME  Name: www   Value: YOUR_GITHUB_USERNAME.github.io
+Type: A      Name: @     Value: 185.199.108.153
+Type: A      Name: @     Value: 185.199.109.153
+Type: A      Name: @     Value: 185.199.110.153
+Type: A      Name: @     Value: 185.199.111.153
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Brand Colors
 
-## Deploy on Vercel
+| Token | Hex | Class |
+|-------|-----|-------|
+| Primary Orange | `#E8673A` | `bg-neo-orange` / `text-neo-orange` |
+| Background | `#080808` | `bg-neo-black` |
+| Dark Surface | `#0F0F0F` | `bg-neo-dark` |
+| Card | `#161616` | `bg-neo-surface` |
+| Text | `#F5F5F5` | `text-neo-text` |
+| Muted | `#9CA3AF` | `text-neo-muted` |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Colors are configured in `src/app/globals.css` via Tailwind v4's `@theme` directive.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Customization
+
+- **Logo**: Replace `public/logo1.jpeg` / `public/logo2.jpeg`
+- **Colors**: Edit `@theme` block in `src/app/globals.css`
+- **Services**: Edit `src/data/services.ts`
+- **Industries**: Edit `src/data/industries.ts`
+- **Blog posts**: Edit `src/data/insights.ts` + add files to `content/blog/`
+- **Team**: Edit leadership array in `src/app/about/page.tsx`
+- **Careers**: Edit `src/data/careers.ts`
+- **Office address**: Edit `src/components/layout/Footer.tsx` and `src/app/contact/page.tsx`
+- **SEO keywords**: Edit `src/app/layout.tsx` metadata
