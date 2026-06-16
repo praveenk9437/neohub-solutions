@@ -39,8 +39,7 @@ export default function ContactPage() {
     e.preventDefault();
     setStatus("loading");
     try {
-      // Formspree integration — replace YOUR_FORM_ID with your actual Formspree form ID
-      const res = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
+      const res = await fetch("https://formspree.io/f/mdavbqgp", {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify(formData),
