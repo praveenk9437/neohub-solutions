@@ -32,9 +32,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <a href="/" className="flex items-center mb-6">
+            <a href="/" className="flex items-center gap-3 mb-6">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/logo1.jpeg" alt="Neohub Solutions" className="h-14 w-auto" />
+              <img src="/Logo_new_black.png" alt="Neohub Solutions" className="h-14 w-auto" />
+              <div className="flex flex-col leading-none">
+                <span className="text-neo-text font-bold text-base tracking-widest uppercase">Neohub</span>
+                <span className="text-neo-orange font-semibold text-sm tracking-widest uppercase">Solutions</span>
+              </div>
             </a>
             <p className="text-neo-muted text-sm leading-relaxed mb-6 max-w-xs">
               Empowering enterprises with intelligent technology solutions that transform operations, drive growth, and create measurable business value.
