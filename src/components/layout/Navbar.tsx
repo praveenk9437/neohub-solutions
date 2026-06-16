@@ -49,7 +49,7 @@ export default function Navbar() {
           <a href="/" className="flex items-center group">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/logo2.jpeg"
+              src="/logo1.jpeg"
               alt="Neohub Solutions"
               className="h-10 w-auto group-hover:opacity-90 transition-opacity duration-200"
             />

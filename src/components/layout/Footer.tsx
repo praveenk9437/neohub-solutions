@@ -34,7 +34,7 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <a href="/" className="flex items-center mb-6">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/logo2.jpeg" alt="Neohub Solutions" className="h-14 w-auto" />
+              <img src="/logo1.jpeg" alt="Neohub Solutions" className="h-14 w-auto" />
             </a>
             <p className="text-neo-muted text-sm leading-relaxed mb-6 max-w-xs">
               Empowering enterprises with intelligent technology solutions that transform operations, drive growth, and create measurable business value.
