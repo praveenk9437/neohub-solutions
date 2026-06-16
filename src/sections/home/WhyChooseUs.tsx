@@ -9,7 +9,7 @@ const differentiators = [
     icon: Award,
     title: "Deep Industry Expertise",
     description: "Our consultants bring 10–20+ years of domain experience across Healthcare, Finance, Manufacturing, and beyond.",
-    stat: "15+ Industries",
+    stat: "8+ Industries",
   },
   {
     icon: Bot,
@@ -21,13 +21,13 @@ const differentiators = [
     icon: Globe2,
     title: "Enterprise Scale Delivery",
     description: "Battle-tested delivery frameworks that scale from pilot to enterprise-wide transformation with predictable outcomes.",
-    stat: "500+ Projects",
+    stat: "50+ Projects",
   },
   {
     icon: Network,
     title: "Global Talent Network",
     description: "Access to a curated network of elite technology practitioners across North America, Europe, and Asia-Pacific.",
-    stat: "20+ Countries",
+    stat: "5+ Countries",
   },
   {
     icon: IterationCcw,

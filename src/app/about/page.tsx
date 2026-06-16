@@ -16,7 +16,7 @@ const values = [
 ];
 
 const leadership = [
-  { name: "Praveen Kumar", title: "Chief Executive Officer", bio: "20+ years leading enterprise technology transformations across Fortune 500 companies." },
+  { name: "Sandeep Surapaneni", title: "Chief Executive Officer", bio: "20+ years leading enterprise technology transformations across Fortune 500 companies." },
   { name: "Sarah Chen", title: "Chief Technology Officer", bio: "Former AWS Principal Architect. Pioneering AI and cloud-native architectures at enterprise scale." },
   { name: "Michael Rodriguez", title: "Chief Data Officer", bio: "Built data platforms for 3 unicorn startups. Expert in modern data stack and AI/ML platforms." },
   { name: "Priya Patel", title: "VP, Delivery Excellence", bio: "15+ years delivering complex enterprise programs on time, on budget, and beyond expectations." },
@@ -25,8 +25,6 @@ const leadership = [
 const globalOffices = [
   { city: "Cary, NC", country: "United States", type: "Headquarters", flag: "🇺🇸" },
   { city: "Hyderabad", country: "India", type: "Global Delivery Center", flag: "🇮🇳" },
-  { city: "London", country: "United Kingdom", type: "European Hub", flag: "🇬🇧" },
-  { city: "Singapore", country: "Singapore", type: "Asia-Pacific Hub", flag: "🇸🇬" },
 ];
 
 export default function AboutPage() {
@@ -126,7 +124,7 @@ export default function AboutPage() {
       {/* Global Delivery */}
       <section className="py-20 bg-neo-dark">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeader badge="Global Presence" title="A Truly " highlight="Global Delivery Model" description="We serve clients across 20+ countries with delivery centers strategically positioned to provide round-the-clock support and expertise." className="mb-12" />
+          <SectionHeader badge="Global Presence" title="A Truly " highlight="Global Delivery Model" description="We serve clients across the US and India with delivery centers strategically positioned to provide round-the-clock support and expertise." className="mb-12" />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {globalOffices.map((office, i) => (
               <motion.div

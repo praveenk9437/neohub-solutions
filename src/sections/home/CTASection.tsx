@@ -47,7 +47,7 @@ export default function CTASection() {
           transition={{ delay: 0.2 }}
           className="text-neo-muted text-lg mb-10 max-w-2xl mx-auto leading-relaxed"
         >
-          Join 200+ enterprises that have partnered with Neohub Solutions to unlock the power of AI, Data, and Cloud. Let's build your transformation story.
+          Join 20+ enterprises that have partnered with Neohub Solutions to unlock the power of AI, Data, and Cloud. Let's build your transformation story.
         </motion.p>
 
         <motion.div

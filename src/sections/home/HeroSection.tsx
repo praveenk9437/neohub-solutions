@@ -87,25 +87,6 @@ export default function HeroSection() {
           </Button>
         </motion.div>
 
-        {/* Metrics Bar */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto"
-        >
-          {[
-            { value: "200+", label: "Clients Served" },
-            { value: "500+", label: "Projects Delivered" },
-            { value: "15+", label: "Industries Supported" },
-            { value: "20+", label: "Global Reach (Countries)" },
-          ].map((metric) => (
-            <div key={metric.label} className="glass rounded-xl p-4 border border-neo-border hover:border-neo-orange/30 transition-all duration-300">
-              <div className="text-2xl md:text-3xl font-bold text-neo-orange mb-1">{metric.value}</div>
-              <div className="text-neo-subtle text-xs sm:text-sm">{metric.label}</div>
-            </div>
-          ))}
-        </motion.div>
       </div>
 
       {/* Scroll indicator */}

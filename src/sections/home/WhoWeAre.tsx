@@ -20,7 +20,7 @@ const timeline = [
   { year: "2021", title: "Data Excellence", description: "Built a world-class Data & Analytics practice with Snowflake and Databricks at the core." },
   { year: "2022", title: "AI Expansion", description: "Established our AI Center of Excellence to lead enterprise AI and ML transformation." },
   { year: "2024", title: "GenAI Leadership", description: "Launched our Generative AI practice, helping enterprises deploy production-grade GenAI solutions." },
-  { year: "2025", title: "Global Growth", description: "Serving 200+ clients across 20+ countries with 500+ successfully delivered projects." },
+  { year: "2025", title: "Global Growth", description: "Serving 20+ clients across 5+ countries with 50+ successfully delivered projects." },
 ];
 
 export default function WhoWeAre() {

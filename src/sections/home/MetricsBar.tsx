@@ -3,10 +3,10 @@
 import AnimatedCounter from "@/components/ui/AnimatedCounter";
 
 const metrics = [
-  { end: 200, suffix: "+", label: "Clients Served" },
-  { end: 500, suffix: "+", label: "Projects Delivered" },
-  { end: 15, suffix: "+", label: "Industries Supported" },
-  { end: 20, suffix: "+", label: "Countries" },
+  { end: 20, suffix: "+", label: "Clients Served" },
+  { end: 50, suffix: "+", label: "Projects Delivered" },
+  { end: 8, suffix: "+", label: "Industries Supported" },
+  { end: 5, suffix: "+", label: "Countries" },
 ];
 
 export default function MetricsBar() {
