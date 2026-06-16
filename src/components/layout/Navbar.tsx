@@ -46,16 +46,13 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-3 group">
-            <div className="relative">
-              <div className="w-10 h-10 rounded-full bg-neo-orange flex items-center justify-center group-hover:shadow-[0_0_20px_rgba(232,103,58,0.6)] transition-all duration-300">
-                <span className="text-white font-bold text-xl leading-none" style={{ fontFamily: "serif" }}>N</span>
-              </div>
-            </div>
-            <div className="hidden sm:block">
-              <span className="text-neo-text font-bold text-lg tracking-wide">NEOHUB</span>
-              <span className="text-neo-orange font-light text-xs tracking-[0.2em] block -mt-0.5">SOLUTIONS</span>
-            </div>
+          <a href="/" className="flex items-center group">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/logo2.jpeg"
+              alt="Neohub Solutions"
+              className="h-10 w-auto group-hover:opacity-90 transition-opacity duration-200"
+            />
           </a>
 
           {/* Desktop Nav */}

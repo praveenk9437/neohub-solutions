@@ -32,14 +32,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <a href="/" className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 rounded-full bg-neo-orange flex items-center justify-center">
-                <span className="text-white font-bold text-xl" style={{ fontFamily: "serif" }}>N</span>
-              </div>
-              <div>
-                <span className="text-neo-text font-bold text-lg tracking-wide">NEOHUB</span>
-                <span className="text-neo-orange font-light text-xs tracking-[0.2em] block -mt-0.5">SOLUTIONS</span>
-              </div>
+            <a href="/" className="flex items-center mb-6">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/logo2.jpeg" alt="Neohub Solutions" className="h-14 w-auto" />
             </a>
             <p className="text-neo-muted text-sm leading-relaxed mb-6 max-w-xs">
               Empowering enterprises with intelligent technology solutions that transform operations, drive growth, and create measurable business value.
@@ -49,13 +44,13 @@ export default function Footer() {
                 <MapPin className="w-4 h-4 mt-0.5 text-neo-orange flex-shrink-0" />
                 <span>5000 Centregreen Way, Suite 500<br />Cary, NC 27513</span>
               </a>
-              <a href="mailto:hello@neohubsolutions.com" className="flex items-center gap-3 text-neo-subtle hover:text-neo-muted transition-colors text-sm">
+              <a href="mailto:sales@neohubsolutions.com" className="flex items-center gap-3 text-neo-subtle hover:text-neo-muted transition-colors text-sm">
                 <Mail className="w-4 h-4 text-neo-orange flex-shrink-0" />
-                <span>hello@neohubsolutions.com</span>
+                <span>sales@neohubsolutions.com</span>
               </a>
-              <a href="tel:+19194000000" className="flex items-center gap-3 text-neo-subtle hover:text-neo-muted transition-colors text-sm">
+              <a href="tel:+12512090501" className="flex items-center gap-3 text-neo-subtle hover:text-neo-muted transition-colors text-sm">
                 <Phone className="w-4 h-4 text-neo-orange flex-shrink-0" />
-                <span>+1 (919) 400-0000</span>
+                <span>+1 (251) 209-0501</span>
               </a>
             </div>
             {/* Social */}

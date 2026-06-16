@@ -15,9 +15,9 @@ const pillars = [
 ];
 
 const timeline = [
-  { year: "2015", title: "Founded", description: "Established in Cary, NC as a technology consulting firm focused on enterprise transformation." },
-  { year: "2018", title: "Cloud Practice", description: "Launched our Cloud Services practice, helping 50+ enterprises migrate to AWS, Azure, and GCP." },
-  { year: "2020", title: "Data Excellence", description: "Built a world-class Data & Analytics practice with Snowflake and Databricks at the core." },
+  { year: "2018", title: "Founded", description: "Established in Cary, NC as a technology consulting firm focused on enterprise transformation." },
+  { year: "2020", title: "Cloud Practice", description: "Launched our Cloud Services practice, helping 50+ enterprises migrate to AWS, Azure, and GCP." },
+  { year: "2021", title: "Data Excellence", description: "Built a world-class Data & Analytics practice with Snowflake and Databricks at the core." },
   { year: "2022", title: "AI Expansion", description: "Established our AI Center of Excellence to lead enterprise AI and ML transformation." },
   { year: "2024", title: "GenAI Leadership", description: "Launched our Generative AI practice, helping enterprises deploy production-grade GenAI solutions." },
   { year: "2025", title: "Global Growth", description: "Serving 200+ clients across 20+ countries with 500+ successfully delivered projects." },

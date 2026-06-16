@@ -73,9 +73,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 postalCode: "27513",
                 addressCountry: "US",
               },
+              email: "sales@neohubsolutions.com",
               contactPoint: {
                 "@type": "ContactPoint",
-                telephone: "+1-919-400-0000",
+                telephone: "+1-251-209-0501",
                 contactType: "customer service",
               },
             }),

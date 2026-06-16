@@ -106,8 +106,8 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <div className="text-neo-text font-semibold mb-0.5">Email Us</div>
-                      <a href="mailto:hello@neohubsolutions.com" className="text-neo-muted text-sm hover:text-neo-orange transition-colors">
-                        hello@neohubsolutions.com
+                      <a href="mailto:sales@neohubsolutions.com" className="text-neo-muted text-sm hover:text-neo-orange transition-colors">
+                        sales@neohubsolutions.com
                       </a>
                     </div>
                   </div>
@@ -117,8 +117,8 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <div className="text-neo-text font-semibold mb-0.5">Call Us</div>
-                      <a href="tel:+19194000000" className="text-neo-muted text-sm hover:text-neo-orange transition-colors">
-                        +1 (919) 400-0000
+                      <a href="tel:+12512090501" className="text-neo-muted text-sm hover:text-neo-orange transition-colors">
+                        +1 (251) 209-0501
                       </a>
                     </div>
                   </div>
